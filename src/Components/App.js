@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route, Redirect, Link } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './Home';
+import Levels from './Levels';
+import Login from './Login';
 
 class App extends Component {
   render() {
@@ -8,7 +10,9 @@ class App extends Component {
       <BrowserRouter>
         <div className='app'>
           <Route exact path='/' component={Home} />
-          {/* <Route path='/purchased' component={Purchased} /> */}
+          <Route exact path='/levels' component={Levels} />
+          <Route exact path='/login' component={Login} />
+          <Route exact path='/signup' component={Login} />
         </div>
       </BrowserRouter>
     );

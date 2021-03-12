@@ -1,39 +1,48 @@
-import './App.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-// const NavBar = () => (
-//   <div className='navbar'>
-//     <h3>Grocery List</h3>
-//     <div className='links'>
-//       <Link to='/'>To Buy</Link>
-//       <Link to='/purchased'>Purchased</Link>
-//     </div>
-//   </div>
-// );
+const Home = () => {
+  return (
+    <div className='container-fluid'>
+      <div className='row'>
+        <div className='col-md-12'>
+          <div className='row'>
+            <div className='col-md-4'></div>
+            <div className='col-md-4'>
+              <div className='align-self-center'>
+                <div className='d-flex justify-content-center'>
+                  <img
+                    alt='kidkode logo'
+                    src='https://www.layoutit.com/img/sports-q-c-140-140-3.jpg'
+                  />
+                </div>
 
-// const ToBuy = () => {
-//   return (
-//     <>
-//       <NavBar />
-//       <p className='layout'>Still Need:</p>
-//       <ul className='Needed'>
-//         <li>Eggs</li>
-//         <li>Bread</li>
-//         <li>Avocados</li>
-//       </ul>
-//     </>
-//   );
-// };
+                <div className='row'>
+                  <div className='col-md-12'>
+                    <div className='d-flex justify-content-center'>
+                      <Link to='/login'>
+                        <button type='button' className='btn btn-success'>
+                          Log in
+                        </button>
+                      </Link>
+                    </div>
+                    <div className='d-flex justify-content-center'>
+                      <Link to='/login'>
+                        <button type='button' className='btn btn-success'>
+                          Sign up
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='col-md-4'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-// const Purchased = () => {
-//   return (
-//     <>
-//       <NavBar />
-//       <p className='layout'>Purchase History:</p>
-//       <ul className='Purchased'>
-//         <li>Almond Milk</li>
-//         <li>Raspberries</li>
-//         <li>Tea</li>
-//       </ul>
-//     </>
-//   );
-// };
+export default Home;
