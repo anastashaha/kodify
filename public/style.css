@@ -1,0 +1,233 @@
+.home {
+  background-image: url('./background.jpg');
+  background-position: center;
+}
+
+.navbar {
+  background-color: rgb(235, 231, 199);
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+}
+
+.test {
+  text-align: center;
+  background-color: rgb(232, 243, 245);
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+}
+
+.test a {
+  float: left;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  color: #000000;
+  padding: 0px 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.test a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a green background color to the active link */
+.test a.active {
+  background-color: #4caf50;
+  color: rgb(161, 235, 224);
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 0px 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a green background color to the active link */
+.navbar a.active {
+  background-color: #4caf50;
+  color: rgb(161, 235, 224);
+}
+
+/* Hide the link that should open and close the navbar on small screens */
+/* .navbar .icon {
+  display: none;
+} */
+
+.homeImage {
+  height: 200px;
+  width: 200px;
+}
+
+.questions {
+  font-family: courier;
+  background-color: rgb(14, 22, 63);
+}
+
+.question {
+  font-family: avenir;
+}
+
+.code {
+  color: rgb(192, 224, 235);
+}
+
+/* .answers {
+  background-color: pink;
+} */
+
+.button {
+  margin-top: 30px;
+  background-color: #6fcaeb; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.homeTitle {
+  font-family: avenir;
+  margin-top: 20px;
+  color: #3e416c;
+}
+
+.correctAnswer {
+  margin-right: 15px;
+}
+
+.photo {
+  display: block;
+  left: 50px;
+  /* object-fit: cover;
+  margin-right: 100px; */
+  float: left;
+  width: 145px;
+  height: 145px;
+}
+
+.profile {
+  margin-top: 30px;
+  font-family: avenir;
+}
+
+.loggedin {
+  margin: auto;
+  width: auto;
+  height: 2000px;
+  background-color: #e9effb;
+}
+
+.correct {
+  margin: auto;
+  width: auto;
+  height: 1000px;
+  background-color: rgb(192, 224, 235);
+}
+
+div.correctContent {
+  height: 20em;
+  /* height: 30em; */
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: rgb(12, 12, 69);
+}
+
+.alignButton {
+  text-align: center;
+}
+
+.correctButton {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  font-family: avenir;
+  background-color: rgb(129, 163, 238);
+  border: none;
+  font-size: 20px;
+  color: white;
+  padding: 16px;
+}
+
+.hint {
+  color: #3e416c;
+  position: fixed;
+  bottom: 10px;
+}
+
+#trial {
+  text-align: center;
+  background-color: #b4c3da;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+}
+
+hr.round {
+  border-top: 8px solid #bbb;
+  border-radius: 10px;
+}
+
+.notyet {
+  margin: auto;
+  width: auto;
+  height: 820px;
+  background-color: rgb(192, 224, 235);
+}
+
+div.notyetContent {
+  height: 20em;
+  /* height: 30em; */
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: rgb(12, 12, 69);
+}
+
+.label {
+  margin-top: 250px;
+}
+
+#body {
+  background: linear-gradient(-45deg, #86dae9, #5bbbee, #8d5aeb, #474d79);
+  background-size: 400% 400%;
+  height: 880px;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
