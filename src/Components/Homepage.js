@@ -21,7 +21,7 @@ const Homepage = () => {
             <div className='col-md-6'>
               <div className='card'>
                 <Link to='/bugs'>
-                  <img src={debugging} className='photo card-img-top' />
+                  <img src={debugging} className='card-img-top' />
                 </Link>
                 <div className='card-body row'>
                   <h5 className='text-left col-8'>Debug</h5>
